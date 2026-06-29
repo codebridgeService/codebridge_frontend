@@ -1,16 +1,13 @@
-# Codebridge — Website
+# Codebridge — Frontend
 
 > **Innovate, Develop, Succeed**
 
-A professional, modern, and fast full-stack website showcasing Codebridge's services, team, and portfolio to attract local businesses in Cambodia and international clients. Built with a modern web ecosystem to ensure optimal performance and SEO.
+A professional, modern, and fast web application showcasing Codebridge's services, team, and portfolio to attract local businesses in Cambodia and international clients. Built with a modern web ecosystem to ensure optimal performance and SEO.
 
 ## 🚀 Tech Stack
 
 - **Framework:** Next.js (App Router)
-- **Frontend:** React 19, Tailwind CSS v4, Framer Motion, React Icons
-- **Backend & DB:** Next.js API Routes, Prisma ORM
-- **Authentication:** Custom JWT Auth, Bcrypt.js, Google Auth
-- **Utilities:** Nodemailer (Contact Forms), ImageKit (Image hosting & processing)
+- **Frontend:** React, Tailwind CSS v4, Framer Motion, React Icons
 
 ## ✨ Key Features
 
@@ -18,8 +15,7 @@ A professional, modern, and fast full-stack website showcasing Codebridge's serv
 - **Modern UI/UX:** Clean, minimal, and professional design system using Codebridge brand colors (Navy Blue & Light Blue).
 - **Dynamic Animations:** Integrated page transitions and smooth scroll animations using Framer Motion.
 - **Portfolio Filtering:** Interactive project gallery with category tabs (All / Web / Mobile / Design).
-- **Contact Integration:** Working contact form with email notifications via Nodemailer.
-- **Admin Dashboard:** Secure backend portal to manage packages, projects, services, team members, and users.
+- **Admin Dashboard:** Secure portal to manage packages, projects, services, team members, and users (communicates with the Codebridge Backend API).
 - **SEO Optimized:** Fast loading times and optimized meta tags.
 
 ## 👥 Meet the Team
@@ -38,27 +34,14 @@ A professional, modern, and fast full-stack website showcasing Codebridge's serv
 Ensure you have Node.js installed on your machine.
 
 ### 2. Environment Setup
-Create a `.env` file at the root of the project and populate it with your specific keys (Database URL, JWT Secret, ImageKit keys, etc.).
+Create a `.env` file at the root of the `frontend` project and populate it with your specific keys (e.g., your Backend API Base URL).
 
 ### 3. Install Dependencies
 ```bash
 npm install
 ```
 
-### 4. Database Setup
-Generate the Prisma client:
-```bash
-npx prisma generate
-```
-
-*(Optional)* If you need to push the schema to your database or run migrations:
-```bash
-npx prisma db push
-# or
-npx prisma migrate dev
-```
-
-### 5. Run the Development Server
+### 4. Run the Development Server
 ```bash
 npm run dev
 ```
